@@ -1,0 +1,208 @@
+Hello GIT !!!
+## Task 2: MVP Codepen:
+https://codepen.io/codemode1/pen/xxZzLPQ
+
+   1. What is Semantic HTML? 
+    It’s the way of using the HTML to state the meaning of information presented in the webpages. 
+    This semantic HTML is processed and used by web browsers. Like how CSS makes it presentable to human users, 
+    Semantic HTML aids web browsers.
+ 
+    2. What is HTML used for? 
+    Hyper Text Markup Language HTML is mainly used for creating Web pages and Web applications.
+    
+    The HTML documents are received by the Web browsers from the web server and provide the document into web pages. 
+
+    3. What is an attribute and where do we put it? 
+    Attributes are characteristics of an element - say for an image the height and width are attributes which 
+    shows additional details on how the image has to be displayed. 
+ 
+ 
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    H1 indicates the most important heading tag in a page. Consider it as the name of the book ! 
+    H1 tag should be used only one time in a page. 
+
+    5. Name two tags that have required attributes
+    Img tag - the Source URL is a required attribute
+    Anchor tag a requires attribute href
+
+    6. What do we put in the head of our HTML document? 
+        The head tag of a HTML document has Title
+    7. What is an id? 
+    ID specifies a unique id for an element .Each id attribute must be unique for a HTML document as it points 
+    to specify styling way in CSS.
+ 
+    8. What elements can I add an id to? 
+    Id can be added to HTML elements like div, h1,button etc
+
+    9. How many times can I use the same id on a page? 
+    ONLY ONE TIME
+
+    10. What is a class? 
+    Class is an attribute made for one or more elements. The class attribute is used to point to a class in a style sheet 
+    to style them in a particular way. 
+    
+    11. What elements can I add a class to? 
+    Class can be shared with many elements in the same HTML page. Div,nav, p ,h2 are some elements that can have class.
+
+    12. How many times can I use the same class on a page? 
+    As many times as its meaningful to give specific styling to those elements under the class.
+
+    13. How do I get my link to open in a new tab?
+    In the Anchor a element give target="_blank" to have the link open in a new window
+    <a href="https://lambdaschool.com" target="_blank"> Visit us </a>
+
+    14. What is the alt attribute in the image tag used for? 
+        alt attribute provides the alternate text for the image. Say if the image cannot be displayed, then it provides
+        alternate info to the user say if the image is not downloaded due to slow connection. 
+
+    15. How do I reference an id?
+    use #<id name>  - the id selector #
+
+    16. What is the difference between a section and a div
+    <section> is a section in a document that is kind of grouped to have related items. 
+
+     <div> is more of a container for HTML elements - which is then styled with CSS.
+      Prefer to use Section !!! as its understood by the browser :)
+
+    17. What is CSS used for? 
+    CSS is the language for describing the presentation of Web pages , including colors, layout, and fonts. 
+    It allows one to adapt the presentation to different types of devices, such as large screens, small screens etc.
+    Analogy ! HTML - Skeleton, CSS - hair,skin,color.
+    
+    18. How to we select an element? Example - every h2 on the page
+    h2{
+
+    }
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+     An ID can be used to identify one element, whereas a class can be used to identify more than one.
+     say to style group of similar products in a particular way - use Class.
+     to style a unique product  - individually - use id.
+
+    20. How do we select classes in CSS?
+    .classname{
+
+    }
+    21. How do we select a p element with a single class of “human””?
+    .human p{
+
+    }
+    22. What is a parent child selector? When would this be useful? 
+    The parent child selector selects all elements that are a direct child of the specified element. Specifically 
+    target the child element and style them. 
+
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar a{
+
+    }
+    24. What is a pseudo selector?
+    A pseudo-class is a selector that selects elements that are in a specific state,
+     e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
+
+    25. What do we use the change the spacing between lines?
+     use line-height:1.5px;
+    26. What do we use to change the spacing between letters?
+    letter-spacing: 5px;
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase; (al capitals)
+    text-transform: lowercase;
+    text-transform: capitalize;
+    28. How do I add a 1px border around my div that is dotted and black?
+    div{
+       border: 1px dotted black;
+    } 
+    29. How do I select everything on the page? 
+    using wildcard selector
+    *{
+
+    }
+    30. How do I write a comment in CSS?
+    /* This is a single-line comment */
+    /* This is
+    a multi-line
+    comment */
+    31. How do I find out what file I am in, when I am using the command line? 
+    $pwd for the working directory
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    $ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    $rm <filename>
+    coz, it will be directly delted and no recycle bin ! 
+
+    34. Why should I use version control? 
+    To keep track of changes when multiple team members are working, also to colloborate changes so 
+    there is no overlap. Concurrent development work is possible and a better way to track and revert changes 
+    when needed. 
+
+    35. How often should I commit to github?
+    In your own brank, commit as often once you have a clean compile. 
+
+    36. What is the command we would use to push our repo up to github?
+    git push  
+    37. Walk me through Lambda's git flow.
+    #1 FORK - Create your own version of Repo.
+    #2 Check successful fork by checking if your name appears in front of repo name.
+    #3 Add TL as colloborator
+    #4 Click green code button to copy the URL 
+    #5 Go to where in your computer you want the clone to be placed mine documents/mygithub/
+    #6 git clone <paste URL>
+    #7 CD and check the list of files
+    #8 git checkout -b firstname-lastname (This creates your own branch where you will be doing the work !)
+    (checking out the code as my own branch!)
+    #9 Note the branch name changes from main to myname !
+    #10 git add (stage and ready)
+    #11 git commit -m "message" 
+    #12 git push -u origin branch-name (to push all changes from your local machine to github)
+    Note branchname here is yourfirstname-lastname that you checkedout
+    #13 Do a PR pull request as your changes are in github after the push in step#12
+    #14 Ensure your are on the forked copy (NOT the original Lambda one)
+    #15 Click on the Branch-master button and select the name of the branch
+    #16 choose your name branch and click "New Pull request" 
+    #17 you will be redirected to pull request page. 
+    #18 click the dropdown button that says **base repository** and CHANGE it to be your FORKED REPO 
+    instead of the original Lambda repo .
+    #19 Add TL as reviewer
+    #20 Now SUBMIT YOUR PULL REQUEST
+
+## Task 3: Stretch 
+Stretch Review questions: 
+1. What is the difference between an inline element and a block element? 
+
+ Inline - Doesnt start on a new line- (a , img , span)
+           Occupy just the width it requires (height/width setting doesnt apply ! cant give them...)
+Inline Block -  same as inline, but u can set the height/width
+Block -  Force Starts on a new line
+Occupy the full width available horizontally (div, li, p , h1) Grabs all the available size
+Always stack on top of the other 
+
+2. What happens when an element is positioned absolutely? 
+An absolutely positioned element is an element whose computed position value is absolute or fixed.
+ The top, right, bottom, and left properties specify offsets from the edges of the element's containing block.
+ 
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+Display:inline-block;
+width:600px;
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default 
+Block: div, li, p,h1
+Inline : p, span, br,button, 
+Inline-block : img (allows to set height/width and they start on the same line)
+
+5. In your own words, explain the box model. What is the fix for the box model? 
+Box Model : Content in the center that will determine the size of the box when nothing is specified. Then 
+comes the padding - its more like inside the background of the element AROUND the conent
+Border goes around the padding. Last thing around the element is the Margin - this determines the space two elements
+are apart from each other.
+
+ Fix for box model !
+box-sizing: border-box includes padding and borders in an element’s width. 
+  
+
+Stretch Git Tasks
+  - [ Y] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
+  - [Y ] Research and understand what a `merge conflict` is and how to resolve it.
+  - [ Y] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the main branch.
+  - [Y ] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
+
+- [ Y] Research and set up a Graphical User Interface (GUI) Git console. 
+
+- [Y ] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push. 
