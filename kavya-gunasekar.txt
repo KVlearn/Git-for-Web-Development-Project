@@ -126,7 +126,7 @@ https://codepen.io/codemode1/pen/xxZzLPQ
     $ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
     $rm <filename>
-    coz, it will be directly delted and no recycle bin ! 
+    coz, it will be directly deleted and no recycle bin ! 
 
     34. Why should I use version control? 
     To keep track of changes when multiple team members are working, also to colloborate changes so 
@@ -134,7 +134,7 @@ https://codepen.io/codemode1/pen/xxZzLPQ
     when needed. 
 
     35. How often should I commit to github?
-    In your own brank, commit as often once you have a clean compile. 
+    In your own branch, commit as often once you have a clean compile. 
 
     36. What is the command we would use to push our repo up to github?
     git push  
@@ -177,7 +177,7 @@ Always stack on top of the other
 2. What happens when an element is positioned absolutely? 
 An absolutely positioned element is an element whose computed position value is absolute or fixed.
  The top, right, bottom, and left properties specify offsets from the edges of the element's containing block.
- 
+TL Q - relative/sticy position , where its used.  
 3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
 Display:inline-block;
 width:600px;
