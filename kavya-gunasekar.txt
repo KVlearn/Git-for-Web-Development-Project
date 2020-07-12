@@ -210,9 +210,13 @@ Stretch Git Tasks
   they are just the tip of the iceberg in learning Git. 
   Independently research the following topics to learn more about Git.
   - [Y] Research and understand what a `merge conflict` is and how to resolve it.
-  You can only resolve merge conflicts on GitHub that are caused by competing line changes, 
+  Say peers change the same file and same line of code - results in conflict when merging. 
+  How to resolve : choose which one to take. Head -local version above equal sign.And remove the 
+  other change. Kind of pick out the code we want when there is a conflict.
+  Note: Fetch ? will get the remote changes to local so we can compare the conflict and decide. 
+  //You can only resolve merge conflicts on GitHub that are caused by competing line changes, 
   such as when people make different changes to the same line of the same file on different branches
-   in your Git repository. 
+   in your Git repository. //
   For all other types of merge conflicts, you must resolve the conflict locally on the command line. 
   Decide if you want to keep only your branch's changes, keep only the other branch's changes, 
   or make a brand new change, which may incorporate changes from both branches. 
@@ -235,6 +239,13 @@ Stretch Git Tasks
  
   - [Y ] Research the Git commands `reset `, `revert`, `clean`. 
   These commands will allow you to go back and amends previous commits you have made.
+reset
+
+revert
+git revert <name of the commit from github> will get back the code back to before this particular commit.
+note - git revert does the commit itself. 
+say , I want to go back to 3 commits back => git revert HEAD~3
+clean
 
 - [ Y] Research and set up a Graphical User Interface (GUI) Git console. 
 Set up done for Github desktop
