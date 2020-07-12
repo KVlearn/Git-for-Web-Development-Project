@@ -189,13 +189,15 @@ Inline-block : img (allows to set height/width and they start on the same line)
 
 5. In your own words, explain the box model. What is the fix for the box model? 
 Box Model : Content in the center that will determine the size of the box when nothing is specified. Then 
-comes the padding - its more like inside the background of the element AROUND the conent
+comes the padding - its more like inside the background of the element AROUND the content
 Border goes around the padding. Last thing around the element is the Margin - this determines the space two elements
 are apart from each other.
-
  Fix for box model !
 box-sizing: border-box includes padding and borders in an element’s width. 
-  
+Usually padding, margin and border adds to the total size of the box, so we need to recalculate everytime 
+when we needed to say change the width of a box. In order to keep the specified width, no matter 
+the amount of padding - border box helps (say if we increase the box width then the 
+content shrinks )! (NOTE by default box-sizing is border-content)  
 
 Stretch Git Tasks
   - [ Y] While the processes learned here will set you up to be successful in most situations, 
@@ -250,3 +252,5 @@ soft alternative is git trash
 - [ Y] Research and set up a Graphical User Interface (GUI) Git console. 
 GIT hub desktop is set, and verified the GUI option
 - [Y ] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push. 
+https://www.youtube.com/watch?v=WgZIv5HI44o
+setup done for SSH keys
