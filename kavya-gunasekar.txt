@@ -194,15 +194,7 @@ Border goes around the padding. Last thing around the element is the Margin - th
 are apart from each other.
 
  Fix for box model !
- 
 box-sizing: border-box includes padding and borders in an element’s width. 
-To keep the specified width - no matter the amount of padding => Using box-sizing:border-box 
-(Using this - if we increase box width then the content will shrink to adjust the box size)
- to remove those default margin and padding
- *{
-     margin:0;
-     padding:0;
- }
   
 
 Stretch Git Tasks
@@ -247,8 +239,11 @@ note - git revert does the commit itself.
 say , I want to go back to 3 commits back => git revert HEAD~3
 Do commit many times is good  ! so we can get back to specific changes  and get back in time if the need be. 
 clean
+  - [ Y] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
+  - [Y ] Research and understand what a `merge conflict` is and how to resolve it.
+  - [ Y] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the main branch.
+  - [Y ] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
 
 - [ Y] Research and set up a Graphical User Interface (GUI) Git console. 
-Set up done for Github desktop
-- [Y ] Research and setup SSH keys with GitHub, so that you do not need to input your 
-username/password each time you push. 
+
+- [Y ] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push. 
