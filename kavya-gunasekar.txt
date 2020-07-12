@@ -198,7 +198,7 @@ box-sizing: border-box includes padding and borders in an element’s width.
   
 
 Stretch Git Tasks
-  - [ ] While the processes learned here will set you up to be successful in most situations, 
+  - [ Y] While the processes learned here will set you up to be successful in most situations, 
   they are just the tip of the iceberg in learning Git. 
   Independently research the following topics to learn more about Git.
   - [Y] Research and understand what a `merge conflict` is and how to resolve it.
@@ -232,18 +232,21 @@ Stretch Git Tasks
   - [Y ] Research the Git commands `reset `, `revert`, `clean`. 
   These commands will allow you to go back and amends previous commits you have made.
 reset
-
-revert
-git revert <name of the commit from github> will get back the code back to before this particular commit.
+Start over the contents of various commits. Hard /soft/mixed at each commit or individual file level .
+help move commits back into earlier stages. 
+soft :
+ say a chunk of commits are moved back into the staging area. so we can regroup them into one commit afterwards. 
+git reset mixed: moves the changes back to the working directory. still be in history. 
+hard - completely removes changes out. decided if we really dont want it. 
+revert :
+    git revert <name of the commit from github> will get back the code back to before this particular commit.
 note - git revert does the commit itself. 
 say , I want to go back to 3 commits back => git revert HEAD~3
 Do commit many times is good  ! so we can get back to specific changes  and get back in time if the need be. 
-clean
-  - [ Y] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
-  - [Y ] Research and understand what a `merge conflict` is and how to resolve it.
-  - [ Y] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the main branch.
-  - [Y ] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
-
+clean :
+to remove the untracked files/dierctory. it deletes the files permanently. 
+soft alternative is git trash
+  -  
 - [ Y] Research and set up a Graphical User Interface (GUI) Git console. 
-
+GIT hub desktop is set, and verified the GUI option
 - [Y ] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push. 
