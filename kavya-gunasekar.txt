@@ -245,6 +245,7 @@ revert
 git revert <name of the commit from github> will get back the code back to before this particular commit.
 note - git revert does the commit itself. 
 say , I want to go back to 3 commits back => git revert HEAD~3
+Do commit many times is good  ! so we can get back to specific changes  and get back in time if the need be. 
 clean
 
 - [ Y] Research and set up a Graphical User Interface (GUI) Git console. 
