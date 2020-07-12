@@ -194,15 +194,49 @@ Border goes around the padding. Last thing around the element is the Margin - th
 are apart from each other.
 
  Fix for box model !
+ 
 box-sizing: border-box includes padding and borders in an element’s width. 
+To keep the specified width - no matter the amount of padding => Using box-sizing:border-box 
+(Using this - if we increase box width then the content will shrink to adjust the box size)
+ to remove those default margin and padding
+ *{
+     margin:0;
+     padding:0;
+ }
   
 
 Stretch Git Tasks
-  - [ Y] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
-  - [Y ] Research and understand what a `merge conflict` is and how to resolve it.
-  - [ Y] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the main branch.
-  - [Y ] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
+  - [ ] While the processes learned here will set you up to be successful in most situations, 
+  they are just the tip of the iceberg in learning Git. 
+  Independently research the following topics to learn more about Git.
+  - [Y] Research and understand what a `merge conflict` is and how to resolve it.
+  You can only resolve merge conflicts on GitHub that are caused by competing line changes, 
+  such as when people make different changes to the same line of the same file on different branches
+   in your Git repository. 
+  For all other types of merge conflicts, you must resolve the conflict locally on the command line. 
+  Decide if you want to keep only your branch's changes, keep only the other branch's changes, 
+  or make a brand new change, which may incorporate changes from both branches. 
+  Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge.
+  - [ Y] Research the Git commands `pull`, `rebase`, `merge`. 
+  Pull request will be to pull this my own branch into the Master. We say the TL  checks if there is any conflict
+  with the current master one. If no conflict then we can merge the changes. 
+  
+  Merge:  These commands will allow you to bring in changes that other developers push to the main branch.
+  combines public branches and Preserve the branch history!!! Resolving conflicts is easy here say we can 
+  undo...whereas its difficult if we rebase. 
+  https://www.youtube.com/watch?v=f1wnYdLEpgI
+  
+  Rebase: Say when there are multiple branches and we want a cleaner versioning. 
+  Takes commits from a branch and places them on target branch.
+  will be like the work was directly done on the base . with just one commit?
+  say combines private branches.
+  When you select the Rebase and merge option on a pull request on GitHub, all commits from the topic branch
+   (or head branch) are added onto the base branch individually without a merge commit. 
+ 
+  - [Y ] Research the Git commands `reset `, `revert`, `clean`. 
+  These commands will allow you to go back and amends previous commits you have made.
 
 - [ Y] Research and set up a Graphical User Interface (GUI) Git console. 
-
-- [Y ] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push. 
+Set up done for Github desktop
+- [Y ] Research and setup SSH keys with GitHub, so that you do not need to input your 
+username/password each time you push. 
